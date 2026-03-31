@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe Amazing Facts | Responsive Layout</title>
+    <style>
+        
+        body {
+            background-color: #050505;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+            color: #ffffff;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            margin: 0;
+            padding: 20px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+        }
+
+        
+        h1 {
+            font-size: clamp(2.5rem, 10vw, 5rem); 
+            margin: 20px 0 10px 0;
+            text-transform: uppercase;
+            color: black;
+            -webkit-text-stroke: 1.5px white;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        .text-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            margin: 20px 0 40px 0;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 6vw, 3rem);
+            text-transform: uppercase;
+            -webkit-text-stroke: 1px #000;
+            text-shadow: 2px 2px 0px #000;
+            margin: 0;
+        }
+
+        h2.amazing {
+            color: #1a4d2e;
+            transform: rotate(-10deg);
+        }
+
+        h2.facts {
+            color: #ff8c00;
+            transform: rotate(10deg);
+        }
+
+        
+        section {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: left;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: #00d4ff;
+            text-transform: uppercase;
+            border-left: 5px solid #ff8c00;
+            padding-left: 15px;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #e0e0e0;
+        }
+
+        b { color: #ff8c00; }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #444, transparent);
+            margin: 30px 0;
+        }
+
+       
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 24px; 
+            transition: all 0.3s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+            background: rgba(255,255,255,0.1);
+        }
+
+        
+        @media (min-width: 768px) {
+            body { padding: 50px; }
+            h1 { -webkit-text-stroke: 2px white; }
+            .text-group { gap: 60px; }
+            .btn { font-size: 32px; }
+            .btn:hover {
+                background: white;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <h1>UNIVERSE</h1>
+
+        <div class="text-group">
+            <h2 class="amazing">AMAZING</h2>
+            <h2 class="facts">FACTS</h2>
+        </div>
+
+        <section>
+            <h3>Visual Composition</h3>
+            <p>This thumbnail follows a classic <b>edutainment</b> style, using cosmic imagery to spark curiosity about science.</p>
+
+            <p>The focal point is <b>Planet Earth</b> set against a vast space background to provide a sense of scale.</p>
+
+            <hr>
+
+            <h3>Typography</h3>
+            <ul>
+                <li><b>UNIVERSE:</b> Massive, white outlined block letters.</li>
+                <li><b>AMAZING:</b> Tilted green-to-blue gradient style.</li>
+                <li><b>FACTS:</b> Bold orange for high contrast.</li>
+            </ul>
+        </section>
+
+        <div class="nav-container">
+            <a href="Projects.html" class="btn">Back</a>
+        </div>
+    </div>
+
+</body>
+</html>

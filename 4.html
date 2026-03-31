@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viral Thumbnail Breakdown</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --shock-red: #cc0000;
+            --dark-maroon: #2b0000;
+            --electric-yellow: #ffde00;
+            --white: #ffffff;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #8b0000 0%, var(--dark-maroon) 100%);
+            color: var(--white);
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 80% 20%, rgba(255, 222, 0, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 50%, rgba(204, 0, 0, 0.4) 0%, transparent 50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            
+            padding: clamp(20px, 5vw, 60px) 20px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Anton', sans-serif;
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            word-wrap: break-word;
+        }
+
+        
+        h1 {
+            font-size: clamp(1.5rem, 6vw, 2.8rem);
+            background: var(--shock-red);
+            display: inline-block;
+            padding: 10px 20px;
+            transform: rotate(-2deg);
+            box-shadow: 6px 6px 0px rgba(0,0,0,0.5);
+            max-width: 90%;
+        }
+
+        
+        h2 {
+            font-size: clamp(2.5rem, 12vw, 5rem);
+            color: var(--electric-yellow);
+            margin-top: 15px;
+            transform: rotate(-1deg);
+            text-shadow: 3px 3px 0px #000, 0 0 15px rgba(255, 222, 0, 0.4);
+        }
+
+        
+        h3 {
+            font-size: clamp(1.8rem, 8vw, 3rem);
+            font-style: italic;
+            color: var(--white);
+            margin-top: -5px;
+            margin-bottom: 30px;
+            transform: rotate(-1deg);
+            opacity: 0.9;
+        }
+
+        h4 {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(1.4rem, 5vw, 1.8rem);
+            color: var(--electric-yellow);
+            text-transform: uppercase;
+            margin-top: 40px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        li {
+            background: rgba(0, 0, 0, 0.4);
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-left: 5px solid var(--electric-yellow);
+            font-size: clamp(0.95rem, 4vw, 1.1rem);
+            line-height: 1.5;
+        }
+
+        li strong {
+            color: var(--electric-yellow);
+            display: block;
+            font-size: clamp(1rem, 4.5vw, 1.2rem);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        hr {
+            border: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--electric-yellow), var(--shock-red), transparent);
+            margin: 40px 0;
+        }
+
+        blockquote {
+            background: rgba(204, 0, 0, 0.2);
+            border: 2px dashed var(--electric-yellow);
+            margin: 0;
+            padding: 20px;
+            font-size: clamp(1.1rem, 5vw, 1.3rem);
+            font-weight: 700;
+            font-style: italic;
+            text-align: center;
+        }
+
+        
+        .btn-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 25px;
+            background: transparent;
+            color: white;
+            border: 3px solid var(--electric-yellow);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 800;
+            
+            font-size: clamp(18px, 6vw, 30px);
+            transition: all 0.3s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+            background: var(--electric-yellow);
+            color: black;
+        }
+
+    
+        @media (min-width: 769px) {
+            .btn:hover {
+                background: var(--electric-yellow);
+                color: black;
+                box-shadow: 0 0 20px var(--shock-red);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Visual Layout & Color Palette</h1>
+    <ul>
+        <li><strong>Color Scheme:</strong> The thumbnail is dominated by a high-energy crimson red and electric yellow. Red is used here to create a sense of urgency and danger.</li>
+        <li><strong>Background Effects:</strong> The backdrop features a dark, smoky red texture overlaid with bright yellow lightning bolts, paired with a red powder explosion on the right.</li>
+        <li><strong>Graphic Elements:</strong> The YouTube logo in the corner is encased in a red liquid splash, making the branding feel dynamic and high-impact.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Typography</h2>
+    <ul>
+        <li><strong>The Action:</strong> The phrase "HOW TO CREATE" is placed on a textured red banner, tilted at an angle to create a sense of frantic movement.</li>
+        <li><strong>The Keyword:</strong> "YOUTUBE" is the focal point, rendered in a bold yellow font with a heavy drop shadow to ensure it stands out against the red chaos.</li>
+        <li><strong>The Object:</strong> "THUMBNAIL" is written in a white, italicized block font, slanted to match the aggressive perspective of the overall design.</li>
+    </ul>
+
+    <hr>
+
+    <h3>Central Imagery</h3>
+    <ul>
+        <li><strong>The Subject:</strong> A man with an exaggerated "shocked" expression serves as the primary emotional hook to spark viewer curiosity.</li>
+        <li><strong>Emotional Strategy:</strong> This "reaction face" is a classic YouTube strategy designed to trigger an immediate "What happened?" response from the viewer.</li>
+        <li><strong>Lighting:</strong> High-contrast edge lighting is applied to the subject, making him look sharp and separated from the smoky background.</li>
+    </ul>
+
+    <h4>Summary</h4>
+    <blockquote>
+        This is an "Extreme/Shock" style thumbnail. It uses high-contrast energy, chaotic weather elements, and a dramatic human reaction to dominate the viewer's attention.
+    </blockquote>
+
+    <div class="btn-container">
+        <a href="Projects.html" class="btn">Back</a>
+    </div>
+</div>
+
+</body>
+</html>

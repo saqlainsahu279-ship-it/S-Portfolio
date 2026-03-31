@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Saqlain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(180deg, #000000 0%, #05050a 45%, #0c0c1e 80%, #1a1a2e 100%);
+            background-attachment: fixed;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        
+        .contact-card {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .contact-card h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2rem, 8vw, 3rem);
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 18px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .contact-item:hover {
+            transform: scale(1.03);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .icon { font-size: 24px; margin-right: 15px; }
+        .details { font-size: clamp(0.9rem, 4vw, 1.1rem); }
+
+        
+        .gmail { background: rgba(212, 70, 56, 0.15); color: #ff6b6b; }
+        .phone { background: rgba(22, 163, 74, 0.15); color: #4ade80; }
+        .facebook { background: rgba(24, 119, 242, 0.15); color: #60a5fa; }
+
+        
+        .back-container {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-back {
+            padding: 12px 40px;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background: white;
+            color: black;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        
+        @media (max-width: 480px) {
+            .contact-card { padding: 30px 20px; }
+            .contact-item { padding: 15px; }
+            .btn-back { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-card">
+        <h2>Contact</h2>
+
+        <a href="mailto:536644hu279@gmail.com" class="contact-item gmail">
+            <span class="icon">✉️</span>
+            <span class="details">536644hu279@gmail.com</span>
+        </a>
+
+        <a href="tel:+923463454307" class="contact-item phone">
+            <span class="icon">📞</span>
+            <span class="details">+92 346 3454307</span>
+        </a>
+
+        <a href="https://facebook.com/yourprofile" target="_blank" class="contact-item facebook">
+            <span class="icon">👥</span>
+            <span class="details">Facebook Profile</span>
+        </a>
+    </div>
+
+    <div class="back-container">
+        <a href="Home.html" class="btn-back">BACK TO HOME</a>
+    </div>
+
+</body>
+</html>
